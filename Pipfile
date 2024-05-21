@@ -8,7 +8,7 @@ fastapi = "*"
 matplotlib = "*"
 sympy = "*"
 mangum = "*"
-scypy = "*"
+scipy = "*"
 
 [dev-packages]
 
