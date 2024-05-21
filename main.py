@@ -29,7 +29,7 @@ async def calc(ecuations: Ecuations):
     try:
         filename = "static/graph.png"
         superavit = calc_superavit.superavit(ecuations.demand, ecuations.offer, filename)
-        return { "superavit": superavit, "image_url": f"http://127.0.0.1:8000/{filename}" }
+        return { "superavit": superavit, "image_url": f"https://old-erica-simon-j-bbe8e266.koyeb.app/{filename}" }
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
 
