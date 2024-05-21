@@ -4,6 +4,10 @@ from fastapi.middleware.cors import CORSMiddleware
 import calc_superavit
 import os
 
+directory = "./static"
+if not os.path.exists(directory):
+    os.makedirs(directory)
+
 class Ecuations(BaseModel):
     demand: str
     offer: str
